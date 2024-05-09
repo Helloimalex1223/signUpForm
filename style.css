@@ -91,13 +91,6 @@ input
     color: red;
 }
 
-input:focus
-{
-    outline: 2px solid rgb(54, 54, 253);
-    box-sizing: border-box;
-    border-radius: .25rem;
-}
-
 .leftForm, .rightForm
 {
     width: 100%;
@@ -121,7 +114,19 @@ input:focus
     border-radius: .5rem;
 }
 
-.password:invalid, .confirm-password:invalid
+input:invalid
 {
-    border: 2px solid red;
+    outline: 2px solid red;
+}
+
+input:valid
+{
+    outline: 2px solid blue;
+}
+
+input:focus
+{
+    outline: 2px solid rgb(54, 54, 253);
+    box-sizing: border-box;
+    border-radius: .25rem;
 }

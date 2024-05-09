@@ -8,22 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script>
-        function validatePassword() 
-{
-     let a = document.querySelector('#password').value;
-     let b = document.querySelector('#password-confirm').value;
-     
-     if(a == b)
-     {
-        alert("Good job! The passwords are the same.");
-     }
-     else
-     {
-        alert("The passwords are not the same :(.");
-     }
-}
-    </script>
+    <script src="script.js"></script>
+
 </head>
 <body>
     <div class="container">
@@ -38,7 +24,7 @@
             </div>
             <div class="form">
                 <p class = "bigger">Let's do this!</p>
-                <form action="/testPage.html" method="get">
+                <form action="/testPage.html" method="get" id ="myForm">
 
                     <div class="formInputs">
                         <div class="leftForm">
@@ -60,7 +46,7 @@
                             <input type="password" name = "password" id = "password" required>
         
                             <label for="confirm-password">Confirm Password<span class="required">*</span></label>
-                            <input type="password" name = "confirm-password" id = "confirm-password">   
+                            <input type="password" name = "confirm-password" id = "confirm-password" required>   
                         </div>
                     </div>
                     <div class="buttons">
