@@ -114,10 +114,7 @@ input
     border-radius: .5rem;
 }
 
-input:invalid
-{
-    outline: 2px solid red;
-}
+
 
 input:valid
 {
